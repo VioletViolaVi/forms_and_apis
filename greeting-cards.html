@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting Cards</title>
+    <link rel="stylesheet" href="./assets/styles/greetings.css" />
+    <script src="./assets/scripts/greetings.js" defer></script>
+    <!-- jQuery CDN link-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Greeting Cards</h1>
+
+    <form id="myForm">
+      <label for="greeting">Greeting</label>
+      <input type="text" id="greeting" required />
+
+      <select name="" id="eventSelector">
+        <option value="wedding" id="wedding">Wedding</option>
+        <option value="divorce" id="divorce">Divorce</option>
+        <option value="birthday" id="birthday">Birthday</option>
+      </select>
+
+      <textarea
+        name="message"
+        id="msg"
+        cols="30"
+        rows="10"
+        placeholder="Message here"
+        required
+      ></textarea>
+
+      <input type="submit" value="Submit" id="formButton" />
+    </form>
+
+    <p id="para"></p>
+    <p id="message"></p>
+  </body>
+</html>
+
+<!-- 
+    Exercise
+    Working in pairs: Create a webpage that generates a celebration card.
+
+    Add a form that asks for the following information
+    Greeting
+    Type of event (selected from a few)
+    Message
+    Submit button
+    On submission, the form should be hidden and a card should be shown in place.
+
+    Stretch goals
+    Use the Unsplash API to pull in a background image based on the type of event.
+ -->
